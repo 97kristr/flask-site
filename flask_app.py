@@ -1,4 +1,4 @@
-"""Author: krille, 2015"""
+﻿"""Author: krille, 2015"""
 
 
 from flask import Flask,render_template
@@ -9,12 +9,12 @@ app = Flask(__name__)
 
 @app.route('/')
 #@ före en funktion är en creator
-@app.route('/index/')
+@app.route('/startpage/')
 #en hemsida kan ha flera sidor
 
 def startpage():
     #funktionen som startar sidan.
-    return render_template("index.html")
+    return render_template("startpage.html")
     #skickar tillbaka en "return" till klienten
     
 
